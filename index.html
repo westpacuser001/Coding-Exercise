@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-controller='MainController'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Westpac Assignment</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="ui/css/app.css" />
+</head>
+
+<body>
+    
+    <div class="viewContainer">
+      <div ng-view class="view"></div>
+      <div class="panel">
+        <button type="button" class="btn btn-primary resetBtn center-block" ng-click="reset()">
+        Reset
+        </button>
+    </div>
+    </div>
+    <!--loading javascripts using requireJS[AMD]-->
+    <script data-main="ui/config/main" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div class="lightBox">
+    <div class="header">
+        <div class="closeButton" ng-click="close()">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+        </div>
+        <div class="title"> 
+            <span>Progress</span>
+        </div>
+    </div>
+    
+    <div class="progressBar">
+        <div class="progressIndicator" ng-style="{width: percentageDone+'%','background-color': percentageDone==100? 'green':''}">
+        </div>
+    </div>
+    
+    <div class="progressMessage" ng-show="!complete">
+        <span>Progress</span> &nbsp <span>{{percentageDone}}%</span>
+    </div>
+    
+    <div class="progressCompleteMsg" ng-show="complete">
+        <span>The task is {{data.lightbox.finish}}% complete</span>&nbsp;
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+    </div>
+    
+</div>

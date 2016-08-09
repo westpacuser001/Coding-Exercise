@@ -1,0 +1,83 @@
+h1.error, h1.other {
+    text-align: center;
+    color: blue;
+}
+
+h1.error {
+    color:red;
+}
+
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: white;
+}
+
+.panel {
+    padding: 10px;   
+}
+
+.viewContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lightBox {
+    width: 400px;
+    background-color: #dcdcdc;
+    margin: auto;
+    
+}
+
+.lightBox .header {
+    font-size: 1.5em;
+    position: relative;
+    color: white;
+    background-color: #696969;
+    padding: 0px 10px;
+}
+
+.lightBox .header .closeButton {
+    float: right;
+}
+
+.lightBox .progressBar {
+    height: 15px;
+    margin: 30px 40px;
+    background-color: white;
+}
+
+.lightBox .progressBar .progressIndicator {
+    height: 15px;
+    background-color: #4682B4;
+    width:0%;
+}
+
+.lightBox .progressMessage, .lightBox .progressCompleteMsg {
+   text-align: center;
+   color: grey;
+   padding-bottom: 30px;
+}
+
+.lightBox .progressCompleteMsg .glyphicon {
+    color: green;
+}
+
+
+@media (max-width: 768px) { 
+    .lightBox {
+        width: 250px;
+    }
+}
+
+@media (max-height: 300px) { 
+    .viewContainer {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+    }
+}
